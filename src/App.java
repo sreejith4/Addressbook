@@ -19,7 +19,7 @@ public class App {
 
 		driver.get("http://192.168.84.239:8082/addressbook/");
 
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.findElement(By.className("v-button")).click();
 		driver.findElement(By.id("gwt-uid-5")).sendKeys("Vivarsh");
