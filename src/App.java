@@ -8,13 +8,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class App {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Vivarsh\\Downloads\\chromedriver_91\\chromedriver.exe");
+				"/home/ubuntu/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(chromeOptions);
-
+		
 		System.out.println("Welcome to demo for selenium chrome webdriver");
 
-		driver.get("http://localhost:8082/addressbook/");
+		driver.get("http://192.168.84.239:8082/addressbook/");
 
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
