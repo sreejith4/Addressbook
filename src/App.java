@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class App {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"/home/ubuntu/chromedriver");
+				"/home/edureka/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(chromeOptions);
