@@ -11,6 +11,8 @@ public class App {
 				"/home/edureka/chromedriver");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.setExperimentalOption("useAutomationExtension", false);
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		
 		System.out.println("Welcome to demo for selenium chrome webdriver");
