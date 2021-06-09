@@ -17,7 +17,7 @@ public class App {
 		
 		System.out.println("Welcome to demo for selenium chrome webdriver");
 
-		driver.get("http://13.127.203.222:8085/addressbook/");
+		driver.get("http://3.108.63.229:8085/addressbook/");
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
